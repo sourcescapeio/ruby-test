@@ -4,4 +4,15 @@ module Example
     user.email = 'hello@example.com' unless self.anonymous?
     user.save
   end
+
+
+  def save_user_again
+    user = User.new
+    user.save
+  end
+
+  def save_user_thrice
+    user = User.new
+    user.save
+  end
 end
