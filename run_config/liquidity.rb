@@ -11,10 +11,10 @@ class LiquidityCrons
   )
 
   run_config RunConfig.new(
-    job_name: 'partner-daily-funding',
+    job_name: 'liquidity-job-2',
     env_vars: self.config_env,
     cron: RunConfig::Cron.new(
-      schedule: { hour: 12, minute: 0 }
+      schedule: { hour: 4, minute: 0 }
     ),
     owning_team: Company::Team::Liquidity
   )
