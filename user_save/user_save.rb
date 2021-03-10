@@ -12,6 +12,6 @@ module Example
   end
 
   def not_a_save
-    user = User2.new
+    user = User.new
   end
 end
